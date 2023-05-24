@@ -1,0 +1,91 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.card {
+  padding: 0 1.5rem;
+  width: 100vw;
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    .card__offer-title {
+      position: absolute;
+      background: $blue-text;
+      width: 22.3rem;
+      height: 4.8rem;
+      left: 3rem;
+      top: -2.2rem;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.2rem;
+      padding: 1.8rem 1rem;
+      text-align: center;
+    }
+
+    .card__title {
+      color: $black;
+      font-weight: 400;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+    }
+
+    .card__params-wrapper {
+      display: flex;
+      align-items: flex-end;
+
+      svg {
+        width: 2.2rem;
+        height: 2.2rem;
+        filter: invert(58%) sepia(4%) saturate(13%) hue-rotate(22deg) brightness(93%) contrast(89%);
+      }
+
+      .card__params {
+        color: $grey;
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin: 2rem 0 0 1rem;
+
+        @media (min-width: 992px) {
+          margin-top: 3rem;
+        }
+      }
+    }
+
+    .card__button {
+      @include call-button;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      width: 18rem;
+      height: 4.5rem;
+      margin-top: 1.5rem;
+
+      @media (min-width: 992px) {
+        position: absolute;
+        top: 8rem;
+        left: 20rem;
+        margin: 0;
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    order: 1;
+    flex-basis: 50%;
+    min-width: 35.4rem;
+  }
+
+  @media (min-width: 992px) {
+    width: 67.7rem;
+    height: 15.7rem;
+    padding: 0;
+  }
+}
+

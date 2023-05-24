@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.productList {
+  display: none;
+}
+@media (min-width: 992px) {
+  .productList {
+    position: absolute;
+    left: 0;
+    display: grid;
+    background: #00569D;
+    width: 100vw;
+    padding: 3.5rem 31rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 29.7rem);
+    gap: 1.5rem 3.5rem;
+    color: #FFFFFF;
+    text-align: start;
+    top: -100rem;
+    visibility: hidden;
+    transition: all 0.4s linear;
+  }
+  .productList p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 2.8rem;
+  }
+  .productList ul {
+    display: inline-block;
+    list-style-position: outside;
+    text-align: left;
+  }
+  .productList ul Li {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    margin-left: 2rem;
+  }
+  .productList ul Li:before {
+    content: "◆";
+    position: absolute;
+    top: 0;
+    left: -2rem;
+  }
+}
+.productList.active {
+  top: 10rem;
+  visibility: visible;
+  transition: all 0.4s linear;
+}
+
+/*# sourceMappingURL=style.css.map */

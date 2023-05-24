@@ -1,0 +1,16 @@
+.logo {
+  width: 6.4rem;
+  height: 3.9rem;
+  margin: 0;
+}
+.logo img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .logo {
+    width: 10.5rem;
+    height: 6.4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

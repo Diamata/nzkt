@@ -1,0 +1,65 @@
+@import "../../../scss/variables";
+
+.info {
+  padding: 3rem 2rem;
+  width: 100vw;
+  margin: 0 auto;
+
+  &__sections {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      width: 100%;
+      height: 6rem;
+      color: $black;
+      background: transparent;
+      border: .1rem solid $grey-light;
+      padding: 2rem 7.3rem;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:nth-child(1), &:nth-child(2) {
+        border-bottom: none;
+      }
+
+      &.active{
+        background: $blue-darken;
+        color: $white;
+
+        &:hover {
+          background: $blue-text;
+        }
+      }
+
+      &:hover {
+        background: $grey-light;
+      }
+
+      @media (min-width: 992px) {
+        width: 22.66rem;
+      }
+    }
+
+    @media (min-width: 576px) {
+      flex-direction: row;
+
+      &:nth-child(1), &:nth-child(2) {
+        border-bottom: .1rem solid $grey-light;
+        border-right: none;
+      }
+    }
+
+    @media (min-width: 992px) {
+      margin: 0 auto;
+      justify-content: center;
+      width: 68rem;
+    }
+  }
+}

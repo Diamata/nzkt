@@ -1,0 +1,52 @@
+.newscard {
+  margin: 3rem auto 0;
+}
+.newscard__img {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.newscard__img .newscard__date {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 9.1rem;
+  height: 3rem;
+  background: #FFFFFF;
+  color: #8A8A8A;
+  padding: 0.7rem 1rem 0.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.newscard__img img {
+  width: 100%;
+  object-fit: cover;
+}
+.newscard__link {
+  color: #00569D;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.newscard__link:hover {
+  color: #96b3d2;
+}
+@media (min-width: 576px) {
+  .newscard__link {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 576px) {
+  .newscard {
+    width: 48%;
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .newscard {
+    width: 29.7rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

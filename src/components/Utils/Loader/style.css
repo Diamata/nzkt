@@ -1,0 +1,112 @@
+.loader-wrapper {
+  width: 23.9rem;
+  height: 23.9rem;
+  border-radius: 100%;
+  border: 0.2rem solid #FFFFFF;
+  padding: 2.4rem;
+  z-index: -1;
+  border: 0.2rem solid #000000;
+}
+.loader-wrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-radius: 100%;
+  width: 22.8rem;
+  height: 22.8rem;
+  border-bottom-color: #FFFFFF;
+  border-right-color: rgba(255, 255, 255, 0);
+  border-top-color: rgba(255, 255, 255, 0);
+  border-left-color: rgba(255, 255, 255, 0);
+  top: -0.25rem;
+  left: -0.3rem;
+  z-index: -1;
+  animation: anti-rotate-animation 1s linear 0s;
+}
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes anti-rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.loader-wrapper:before {
+  content: "";
+  border-bottom-color: #000000;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  animation: rotate-animation 1s linear infinite;
+}
+.loader-wrapper .loader {
+  width: 23.9rem;
+  height: 23.9rem;
+  border-radius: 100%;
+  border: 0.2rem solid #FFFFFF;
+  padding: 2.4rem;
+  z-index: -1;
+  border: 0.2rem solid #000000;
+  width: 18.5rem;
+  height: 18.5rem;
+  padding: 2rem;
+}
+.loader-wrapper .loader:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-width: 0.8rem;
+  border-style: solid;
+  border-radius: 100%;
+  width: 22.8rem;
+  height: 22.8rem;
+  border-bottom-color: #FFFFFF;
+  border-right-color: rgba(255, 255, 255, 0);
+  border-top-color: rgba(255, 255, 255, 0);
+  border-left-color: rgba(255, 255, 255, 0);
+  top: -0.25rem;
+  left: -0.3rem;
+  z-index: -1;
+  animation: anti-rotate-animation 1s linear 0s;
+}
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes anti-rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.loader-wrapper .loader:before {
+  content: "";
+  border-bottom-color: #000000;
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  width: 17.4rem;
+  height: 17.4rem;
+  top: 2.4rem;
+  left: 2.3rem;
+  transform: rotate(30deg);
+  animation: anti-rotate-animation 1s linear infinite;
+}
+
+/*# sourceMappingURL=style.css.map */

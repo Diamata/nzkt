@@ -1,0 +1,48 @@
+.special {
+  margin-top: 4.9rem;
+  height: auto;
+  width: 100vw;
+  background: #003663;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+  position: relative;
+}
+.special__title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+@media (min-width: 576px) {
+  .special__title {
+    font-size: 2.4rem;
+    padding: 0 12.4rem;
+    line-height: 3.3rem;
+  }
+}
+@media (min-width: 992px) {
+  .special__title {
+    position: absolute;
+    top: 3.5rem;
+    left: 31rem;
+    padding: 0;
+    margin: 0;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    width: 70.5rem;
+    text-align: start;
+  }
+}
+@media (min-width: 992px) {
+  .special {
+    padding: 3.5rem 31rem;
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+.nav__in-list {
+  position: relative;
+  cursor: pointer;
+}
+.nav__in-list.chosen {
+  position: absolute;
+  height: 6.4rem;
+  width: 100vw;
+  background: #003663;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+.nav__in-list p {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
+.nav__in-list p:hover {
+  background: #003663;
+}
+@media (min-width: 576px) {
+  .nav__in-list p {
+    font-size: 1.4rem;
+    padding: 2.2rem;
+  }
+}
+.nav__in-list .arrow {
+  display: none;
+  opacity: 0;
+}
+.nav__in-list .arrow.active {
+  display: block;
+  margin-right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

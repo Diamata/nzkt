@@ -1,0 +1,90 @@
+.contact {
+  padding: 3rem 2rem;
+  width: 90vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #00569D;
+  z-index: 9999;
+}
+.contact h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  display: block;
+  color: #FFFFFF;
+}
+@media (min-width: 576px) {
+  .contact h3 {
+    font-size: 3.2rem;
+  }
+}
+.contact form {
+  margin-top: 3rem;
+  width: 100%;
+}
+.contact form input, .contact form label, .contact form span {
+  display: block;
+}
+.contact form input, .contact form textarea {
+  margin-bottom: 3rem;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  width: 100%;
+  color: #000000;
+}
+.contact form label span {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+}
+.contact form textarea {
+  resize: none;
+}
+.contact form button {
+  height: 5rem;
+  width: auto;
+  padding: 0 2rem;
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  outline: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.contact form button:hover {
+  background: #FFFFFF;
+  color: #000000;
+  border: none;
+}
+@media (min-width: 576px) {
+  .contact form button {
+    font-size: 1.8rem;
+  }
+}
+.contact form button:disabled {
+  background: #EFEFEF;
+  color: #8A8A8A;
+}
+.contact form button:disabled:hover {
+  cursor: not-allowed;
+}
+@media (min-width: 576px) {
+  .contact form {
+    width: 60%;
+  }
+}
+@media (min-width: 576px) {
+  .contact {
+    width: 80vw;
+  }
+}
+@media (min-width: 992px) {
+  .contact {
+    width: 45vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

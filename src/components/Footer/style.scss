@@ -1,0 +1,69 @@
+@import "../../scss/variables";
+
+.footer {
+  background: $grey-light;
+  padding: .5rem 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+
+  &__headSm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 576px) {
+      display: none;
+    }
+  }
+
+  &__logo_big {
+    margin: 3.4em auto 1.5rem;
+    height: 4rem;
+
+    @media (min-width: 576px) {
+      margin: 0;
+      width: 21.9rem;
+      height: auto;
+    }
+
+    @media (min-width: 992px) {
+      width: 21.9rem;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $grey;
+    margin-right: 2rem;
+
+    @media (min-width: 576px) {
+      text-align: start;
+      flex-basis: 60%;
+      font-size: 1.8rem;
+    }
+
+    @media (min-width: 992px) {
+      flex-basis: 50%;
+      text-align: end;
+    }
+  }
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+  }
+
+  @media (min-width: 992px) {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}

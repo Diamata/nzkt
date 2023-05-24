@@ -1,0 +1,112 @@
+.menuLg {
+  display: none;
+}
+@media (min-width: 992px) {
+  .menuLg {
+    display: block;
+    width: 100vw;
+    height: 6rem;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 0 31rem;
+    background: #003663;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10.4rem;
+    position: relative;
+  }
+  .menuLg .menuLg__menu-item-list {
+    height: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__menu-item {
+    width: 18.32rem;
+    padding: 2rem 0;
+    border-left: 1px solid #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__menu-item:last-child {
+    border-right: 1px solid #FFFFFF;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__menu-item:nth-child(2) {
+    padding-left: 2rem;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__menu-item:hover {
+    background: #00569D;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__second {
+    position: absolute;
+    left: 0;
+    min-width: 18.32rem;
+    display: flex;
+    visibility: hidden;
+    top: -100%;
+    opacity: 0;
+    flex-direction: column;
+    padding: 3.5rem 3.5rem 2rem;
+    background: #00569D;
+    text-align: start;
+    z-index: 100;
+    text-transform: none;
+    transition: all 0.1s linear;
+    margin-left: 1rem;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__second .menuLg__menu-item-second {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    color: #FFFFFF;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__second .menuLg__menu-item-second:hover {
+    text-decoration: underline;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__second.active {
+    visibility: visible;
+    top: 6.2rem;
+    transition: all 0.25s linear;
+    opacity: 1;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__burger {
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 3.6rem;
+    height: 3.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.9rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.25rem;
+    z-index: 90;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__burger span {
+    width: 1.3rem;
+    height: 0.15rem;
+    background: #FFFFFF;
+    border-radius: 0.1rem;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__burger span:nth-child(1), .menuLg .menuLg__menu-item-list .menuLg__burger span:nth-child(2) {
+    margin-bottom: 0.3rem;
+  }
+  .menuLg .menuLg__menu-item-list .menuLg__burger:hover ~ .menuLg__menu-item:nth-child(2) {
+    background: #00569D;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

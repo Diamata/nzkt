@@ -1,0 +1,197 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.prefooter {
+  display: none;
+
+  @media (min-width: 576px) {
+    display: grid;
+    grid-template-rows: 3rem 1fr 11rem;
+    grid-template-columns: 12.6rem 14rem 18rem auto;
+    background: $blue-darken ;
+    margin-bottom: 3rem;
+    color: $white;
+    padding: 2rem;
+    gap: 3rem;
+
+    p {
+      font-weight: 500;
+      font-size: 1.6rem;
+      text-align: start;
+    }
+
+    ul {
+      list-style: none;
+      text-align: start;
+
+      li {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding-bottom: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__nav {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__nav-list {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__prod {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__prod-list {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__call {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+
+      display: flex;
+      flex-direction: column;
+
+      a {
+        font-weight: 400;
+        font-size: 1.8rem;
+      }
+    }
+
+    &__warehouses {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    &__warehouses-list {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    &__contact-manager {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 4;
+
+      color: $yellow;
+      font-size: 1.6rem;
+      font-weight: 400;
+      padding: 3.5rem 2rem;
+      border: 2px $yellow solid;
+    }
+
+    &__contacts {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      position: relative;
+
+      .prefooter__central-office {
+        margin-bottom: 1.5rem;
+      }
+
+      .prefooter__central-office-address, a {
+        font-weight: 400;
+        font-size: 1.6rem;
+      }
+
+      .prefooter__central-office-address {
+        margin: 3.5rem 0 11.75rem;
+      }
+
+      .prefooter__call-button {
+        @include call-button;
+        @include call-button_lg;
+        margin-bottom: 3.5rem;
+        position: absolute;
+        top: -2rem;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    grid-template-rows: 2.9rem 26rem;
+    grid-template-columns: 12.6rem 31.2rem 38.3rem 30rem;
+    background: $blue-darken;
+    margin-bottom: 0;
+    color: $white;
+    padding: 6rem 31rem;
+    column-gap: 6rem;
+
+    &__prod {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__prod-list {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__warehouses {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__warehouses-list {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__contact-manager {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin: 14rem 0 1rem;
+      padding: 2rem 10rem 2rem 2rem;
+      line-height: 2rem;
+    }
+
+    &__contacts {
+
+      .prefooter__central-office {
+        margin: 6rem 0 1.5rem;
+      }
+      .prefooter__central-office-address {
+        margin: 2rem 0 9.5rem;
+      }
+    }
+  }
+}

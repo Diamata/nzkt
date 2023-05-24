@@ -1,0 +1,92 @@
+.card {
+  padding: 0 1.5rem;
+  width: 100vw;
+}
+.card__wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.card__wrapper .card__offer-title {
+  position: absolute;
+  background: #00569D;
+  width: 22.3rem;
+  height: 4.8rem;
+  left: 3rem;
+  top: -2.2rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 1.8rem 1rem;
+  text-align: center;
+}
+.card__wrapper .card__title {
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+.card__wrapper .card__params-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.card__wrapper .card__params-wrapper svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  filter: invert(58%) sepia(4%) saturate(13%) hue-rotate(22deg) brightness(93%) contrast(89%);
+}
+.card__wrapper .card__params-wrapper .card__params {
+  color: #8A8A8A;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin: 2rem 0 0 1rem;
+}
+@media (min-width: 992px) {
+  .card__wrapper .card__params-wrapper .card__params {
+    margin-top: 3rem;
+  }
+}
+.card__wrapper .card__button {
+  background: #FFCD00;
+  outline: none;
+  border: none;
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  cursor: pointer;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  width: 18rem;
+  height: 4.5rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 992px) {
+  .card__wrapper .card__button {
+    position: absolute;
+    top: 8rem;
+    left: 20rem;
+    margin: 0;
+  }
+}
+@media (min-width: 576px) {
+  .card {
+    order: 1;
+    flex-basis: 50%;
+    min-width: 35.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    width: 67.7rem;
+    height: 15.7rem;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+@import "../../scss/variables";
+
+.breadcrumbs {
+  color: $blue-darken;
+  font-size: 1.4rem;
+  margin: 5rem 0 0;
+  text-align: start;
+  padding: 0 2rem;
+  cursor: pointer;
+  width: 100%;
+
+  @media (min-width: 992px) {
+    margin: 0;
+  }
+
+  * {
+    display: inline-block;
+  }
+
+  .crumb {
+    &:after {
+      content: ">";
+      margin: 0 1rem;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

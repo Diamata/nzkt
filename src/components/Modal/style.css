@@ -1,0 +1,60 @@
+.modal {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modal__close {
+  position: absolute;
+  top: 3rem;
+  right: 6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity ease 0.5s;
+}
+.modal__close:hover {
+  opacity: 0.6;
+}
+.modal__close:before, .modal__close:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -0.7rem;
+  right: -4.2rem;
+  width: 4rem;
+  height: 0.3rem;
+  background: #003663;
+}
+@media (min-width: 576px) {
+  .modal__close:before, .modal__close:after {
+    top: -0.7rem;
+    right: -4.2rem;
+    width: 4rem;
+    height: 0.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .modal__close:before, .modal__close:after {
+    top: 2rem;
+    right: -2rem;
+    width: 6rem;
+    height: 0.6rem;
+  }
+}
+.modal__close:before {
+  transform: rotate(45deg);
+}
+.modal__close:after {
+  transform: rotate(-45deg);
+}
+
+/*# sourceMappingURL=style.css.map */

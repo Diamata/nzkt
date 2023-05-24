@@ -1,0 +1,56 @@
+@import "../../../scss/variables";
+
+.productList {
+  display: none;
+
+  @media (min-width: 992px) {
+    position: absolute;
+    left: 0;
+    display: grid;
+    background: $blue-text;
+    width: 100vw;
+    padding: 3.5rem 31rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 29.7rem);
+    gap: 1.5rem 3.5rem;
+    color: $white;
+    text-align: start;
+    top: -100rem;
+    visibility: hidden;
+    transition: all .4s linear;
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      line-height: 2.8rem;
+    }
+
+    ul {
+      display: inline-block;
+      list-style-position: outside;
+      text-align: left;
+
+      Li {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding-bottom: 2rem;
+        position: relative;
+        margin-left: 2rem;
+
+        &:before {
+          content: "◆";
+          position: absolute;
+          top: 0;
+          left: -2rem;
+        }
+      }
+    }
+  }
+
+  &.active {
+    top: 10rem;
+    visibility: visible;
+    transition: all .4s linear;
+  }
+}

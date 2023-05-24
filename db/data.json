@@ -1,0 +1,124 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "img": "../assetspb/img/news1-pb.jpg",
+      "title": "Композитная арматура федерального уровня — от НЗК",
+      "link": "news/news-1"
+    },
+    {
+      "id": 2,
+      "img": "../assetspb/img/news2-pb.jpg",
+      "title": "Композитная арматура федерального уровня — от НЗК",
+      "link": "news/news-2"
+    },
+    {
+      "id": 3,
+      "img": "../assetspb/img/news1-pb.jpg",
+      "title": "Композитная арматура федерального уровня — от НЗК",
+      "link": "news/news-3"
+    },
+    {
+      "id": 4,
+      "img": "../assetspb/img/news2-pb.jpg",
+      "title": "Композитная арматура федерального уровня — от НЗК",
+      "link": "news/news-4"
+    }],
+
+  "offerSlides": [
+    {
+      "id": 1,
+      "title": "composite-reinforcement",
+      "desc": "Композитная арматура \n стеклопластиковая и базальтовая",
+      "params": "от 2мм / 50х50",
+      "url": "../assetspb/icons/products_icons/full_view/fv_composite-reinforcement-pb.png"
+    },
+    {
+      "id": 2,
+      "title": "composite-basalt-mesh",
+      "desc": "Композитная сетка \n стеклопластиковая и базальтовая",
+      "params": "от 2мм / 50х50",
+      "url": "../assetspb/icons/products_icons/full_view/fv_composite-basalt-mesh-pb.png"
+    },
+    {
+      "id": 3,
+      "title": "flexible-composite-ties",
+      "desc": "Гибкие \n композитные связи",
+      "params": "от 2мм / 50х50",
+      "url": "../assetspb/icons/products_icons/full_view/fv_flexible-composite-ties_v2-pb.png"
+    }
+  ],
+
+  "productsList": [
+    {
+      "id": 1,
+      "title": "Композитная\n арматура",
+      "imgSm": "../assetspb/icons/products_icons/full_view/fv_composite-reinforcement2-pb.png",
+      "imgLg": "../assetspb/icons/products_icons/closer/c_composite-reinforcement-pb.png"
+    },
+    {
+      "id": 2,
+      "title": "Композитная\nи базальтовая \nсетка\n",
+      "imgSm": "../assetspb/icons/products_icons/full_view/fv_composite-basalt-mesh2-pb.png",
+      "imgLg": "../assetspb/icons/products_icons/closer/c_composite-basalt-mesh-pb.png"
+    },
+    {
+      "id": 3,
+      "title": "Гнутые \nкомпозитные \nэлементы",
+      "imgSm": "./assetspb/icons/products_icons/full_view/fv_bent-composite-elements-pb.png",
+      "imgLg": "./assetspb/icons/products_icons/closer/c_bent-composite-elements-pb.png"
+    },
+    {
+      "id": 4,
+      "title": "Гибкие\n композитные\n связи",
+      "imgSm": "../assetspb/icons/products_icons/full_view/fv_flexible-composite-ties_v1-pb.png",
+      "imgLg": "../assetspb/icons/products_icons/closer/c_flexible-composite-ties-pb.png"
+    },
+    {
+      "id": 5,
+      "title": "Гидро-\n изаляционные\n смеси\n",
+      "imgSm": "../assetspb/icons/products_icons/full_view/fv_hydro-isolation-mix-pb.png",
+      "imgLg": "../assetspb/icons/products_icons/closer/c_hydro-isolation-mix-pb.png"
+    },
+    {
+      "id": 6,
+      "title": "Фиксаторы\n арматуры",
+      "imgSm": "../assetspb/icons/products_icons/full_view/fv_rebar-clamps-pb.png",
+      "imgLg": "../assetspb/icons/products_icons/closer/c_rebar-clamps-pb.png"
+    },
+    {
+      "id": 7,
+      "title": "Композитные\n профильные\n изделия",
+      "imgSm": "../assetspb/icons/products_icons/full_view/fv_composite-profile-products-pb.png",
+      "imgLg": "../assetspb/icons/products_icons/closer/c_composite-profile-products-pb.png"
+    },
+    {
+      "id": 8,
+      "title": "Фибра\n стеклопластик\n и базальтовая",
+      "imgSm": "../assetspb/icons/products_icons/full_view/fv_fiberglass-and-basalt-fiber-pb.png",
+      "imgLg": "../assetspb/icons/products_icons/closer/c_fiberglass-and-basalt-fiber-pb.png"
+    }
+  ],
+
+  "uniqueOffers": [
+    {
+      "img": "../assetspb/img/percent-pb.png",
+      "titleMain": "Нашли продукцию дешевле?",
+      "titleSecondary": "Мы сделаем скидку!",
+      "buttonTitle": "Оставьте заявку на скидку"
+    },
+    {
+      "img": "../assetspb/img/machine-pb.png",
+      "titleMain": "Производство своими глазами",
+      "titleSecondary": "Хотите экскурсию?",
+      "buttonTitle": "Хочу пойти на экскурсию"
+    }
+  ],
+
+  "video": [
+    {
+      "url": "../assetspb/video/earth-video-pb.mp4",
+      "cover": "../assetspb/img/video-cover-pb.jpg"
+    }
+  ]
+}

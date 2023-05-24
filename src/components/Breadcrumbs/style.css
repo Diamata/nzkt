@@ -1,0 +1,26 @@
+.breadcrumbs {
+  color: #003663;
+  font-size: 1.4rem;
+  margin: 5rem 0 0;
+  text-align: start;
+  padding: 0 2rem;
+  cursor: pointer;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .breadcrumbs {
+    margin: 0;
+  }
+}
+.breadcrumbs * {
+  display: inline-block;
+}
+.breadcrumbs .crumb:after {
+  content: ">";
+  margin: 0 1rem;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

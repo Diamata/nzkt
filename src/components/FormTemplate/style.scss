@@ -1,0 +1,97 @@
+@import "../../scss/variables";
+
+.contact {
+  padding: 3rem 2rem;
+  width: 90vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $blue-text;
+  z-index: 9999;
+
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: block;
+    color: $white;
+
+    @media (min-width: 576px) {
+      font-size: 3.2rem;
+    }
+  }
+
+  form {
+    margin-top: 3rem;
+    width: 100%;
+
+    input, label, span {
+      display: block;
+    }
+
+    input, textarea {
+        margin-bottom: 3rem;
+        padding: .8rem;
+        border-radius: .4rem;
+        border: none;
+        width: 100%;
+        color: $black;
+    }
+
+    label {
+      span {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        color: $white;
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      height: 5rem;
+      width: auto;
+      padding: 0 2rem;
+      background: transparent;
+      color: $white;
+      border: 1px solid $white;
+      outline: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+
+      &:hover {
+        background: $white;
+        color: $black;
+        border: none;
+      }
+
+      @media (min-width: 576px) {
+        font-size: 1.8rem;
+      }
+
+      &:disabled {
+        background: $grey-light;
+        color: $grey;
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    @media (min-width: 576px) {
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 576px) {
+    width: 80vw;
+  }
+
+  @media (min-width: 992px) {
+    width: 45vw;
+  }
+
+}

@@ -1,0 +1,114 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.menuLg {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: block;
+    width: 100vw;
+    height: 6rem;
+    border-bottom: 1px solid $white;
+    padding: 0 31rem;
+    background: $blue-darken;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10.4rem;
+    position: relative;
+
+    .menuLg__menu-item-list {
+      height: 100%;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      align-items: center;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      position: relative;
+
+      .menuLg__menu-item {
+        width: 18.32rem;
+        padding: 2rem 0;
+        border-left: 1px solid $white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:last-child {
+          border-right: 1px solid $white;
+        }
+
+        &:nth-child(2) {
+          padding-left: 2rem;
+        }
+
+        &:hover {
+          background: $blue-text;
+        }
+      }
+
+      .menuLg__second {
+        position: absolute;
+        left: 0;
+        min-width: 18.32rem;
+        display: flex;
+        visibility: hidden;
+        top: -100%;
+        opacity: 0;
+        flex-direction: column;
+        padding: 3.5rem 3.5rem 2rem;
+        background: $blue-text;
+        text-align: start;
+        z-index: 100;
+        text-transform: none;
+        transition: all .1s linear;
+        margin-left: 1rem;
+
+        .menuLg__menu-item-second {
+          font-size: 1.6rem;
+          line-height: 2rem;
+          font-weight: 400;
+          padding-bottom: 1.5rem;
+          color: $white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &.active {
+          visibility: visible;
+          top: 6.2rem;
+          transition: all .25s linear;
+          opacity: 1;
+        }
+      }
+
+      .menuLg__burger {
+        @include burger;
+        position: absolute;
+        top: 1.2rem;
+        left: 1.25rem;
+        z-index: 90;
+
+        span {
+          width: 1.3rem;
+          height: .15rem;
+          background: $white;
+          border-radius: .1rem;
+
+          &:nth-child(1), &:nth-child(2) {
+            margin-bottom: .3rem;
+          }
+        }
+
+        &:hover ~ .menuLg__menu-item:nth-child(2) {
+          background: $blue-text;
+        }
+      }
+    }
+  }
+}

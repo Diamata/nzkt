@@ -1,0 +1,177 @@
+.prefooter {
+  display: none;
+}
+@media (min-width: 576px) {
+  .prefooter {
+    display: grid;
+    grid-template-rows: 3rem 1fr 11rem;
+    grid-template-columns: 12.6rem 14rem 18rem auto;
+    background: #003663;
+    margin-bottom: 3rem;
+    color: #FFFFFF;
+    padding: 2rem;
+    gap: 3rem;
+  }
+  .prefooter p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: start;
+  }
+  .prefooter ul {
+    list-style: none;
+    text-align: start;
+  }
+  .prefooter ul li {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+  }
+  .prefooter ul li:hover {
+    text-decoration: underline;
+  }
+  .prefooter__nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .prefooter__nav-list {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .prefooter__prod {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .prefooter__prod-list {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .prefooter__call {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .prefooter__call a {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  .prefooter__warehouses {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .prefooter__warehouses-list {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .prefooter__contact-manager {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    color: #FFCD00;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 3.5rem 2rem;
+    border: 2px #FFCD00 solid;
+  }
+  .prefooter__contacts {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+  }
+  .prefooter__contacts .prefooter__central-office {
+    margin-bottom: 1.5rem;
+  }
+  .prefooter__contacts .prefooter__central-office-address, .prefooter__contacts a {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  .prefooter__contacts .prefooter__central-office-address {
+    margin: 3.5rem 0 11.75rem;
+  }
+  .prefooter__contacts .prefooter__call-button {
+    background: #FFCD00;
+    outline: none;
+    border: none;
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 400;
+    cursor: pointer;
+    width: 16.7rem;
+    height: 4.5rem;
+    line-height: 2rem;
+    margin-bottom: 3.5rem;
+    position: absolute;
+    top: -2rem;
+  }
+}
+@media (min-width: 992px) {
+  .prefooter {
+    grid-template-rows: 2.9rem 26rem;
+    grid-template-columns: 12.6rem 31.2rem 38.3rem 30rem;
+    background: #003663;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    padding: 6rem 31rem;
+    column-gap: 6rem;
+  }
+  .prefooter__prod {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .prefooter__prod-list {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .prefooter__warehouses {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .prefooter__warehouses-list {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .prefooter__contact-manager {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 14rem 0 1rem;
+    padding: 2rem 10rem 2rem 2rem;
+    line-height: 2rem;
+  }
+  .prefooter__contacts .prefooter__central-office {
+    margin: 6rem 0 1.5rem;
+  }
+  .prefooter__contacts .prefooter__central-office-address {
+    margin: 2rem 0 9.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

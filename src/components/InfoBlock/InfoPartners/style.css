@@ -1,0 +1,30 @@
+.info__partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.info__partners .info__img-wrapper {
+  width: 14.9rem;
+  height: 8.2rem;
+}
+@media (min-width: 992px) {
+  .info__partners .info__img-wrapper {
+    width: 26.1rem;
+    margin: 3rem 0 5rem;
+  }
+}
+.info__partners .info__img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .info__partners {
+    justify-content: center;
+    margin: 0 auto;
+    width: 130rem;
+    padding: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+button {
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 2.7777777778vw;
+}
+@media (min-width: 576px) {
+  html {
+    font-size: 1.3020833333vw;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 0.5208333333vw;
+  }
+}
+
+.App {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 19.8rem);
+}
+@media (min-width: 576px) {
+  .App {
+    height: calc(100vh - 63.8rem);
+  }
+}
+@media (min-width: 992px) {
+  .App {
+    height: calc(100vh - 55.3rem);
+  }
+}
+
+.page-wrapper {
+  min-height: calc(100vh - 19.8rem);
+}
+@media (min-width: 576px) {
+  .page-wrapper {
+    min-height: calc(100vh - 63.8rem);
+  }
+}
+@media (min-width: 992px) {
+  .page-wrapper {
+    min-height: calc(100vh - 55.3rem);
+  }
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=global.css.map */
